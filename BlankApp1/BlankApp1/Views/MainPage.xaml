@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="BlankApp1.Views.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:xe="clr-namespace:XamEffects;assembly=XamEffects"
+    Title="{Binding Title}">
+
+    <ContentPage.Content>
+        <StackLayout Padding="10,0,10,10">
+            <ListView
+                HasUnevenRows="true"
+                ItemsSource="{Binding TestList}"
+                SeparatorColor="White">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout
+                                Padding="1,5,1,5"
+                                BackgroundColor="White"
+                                VerticalOptions="Center">
+                                <Frame
+                                    Padding="0"
+                                    BackgroundColor="White"
+                                    BorderColor="White"
+                                    CornerRadius="5"
+                                    HasShadow="True"
+                                    HorizontalOptions="FillAndExpand">
+                                    <ContentView xe:TouchEffect.Color="Gray">
+                                        <Frame Padding="5,5,5,5" BackgroundColor="Transparent">
+                                            <StackLayout>
+                                                <Grid>
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition Width="*" />
+                                                    </Grid.ColumnDefinitions>
+                                                    <Grid.RowDefinitions>
+                                                        <RowDefinition Height="Auto" />
+                                                    </Grid.RowDefinitions>
+                                                    <Grid
+                                                        Grid.Row="0"
+                                                        Grid.Column="0"
+                                                        HorizontalOptions="Center">
+                                                        <StackLayout Orientation="Horizontal">
+                                                            <Label
+                                                                FontAttributes="Bold"
+                                                                FontSize="10"
+                                                                Text="{Binding Name}"
+                                                                VerticalOptions="Start" />
+                                                        </StackLayout>
+                                                    </Grid>
+                                                </Grid>
+                                                <Grid>
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition Width="Auto" />
+                                                    </Grid.ColumnDefinitions>
+                                                    <Grid.RowDefinitions>
+                                                        <RowDefinition Height="Auto" />
+                                                    </Grid.RowDefinitions>
+                                                    <Grid Grid.Row="0" Grid.Column="0">
+                                                        <StackLayout Orientation="Horizontal">
+                                                            <Label
+                                                                FontAttributes="Bold"
+                                                                FontSize="15"
+                                                                Text="{Binding Name}"
+                                                                VerticalTextAlignment="Center" />
+                                                            <Label
+                                                                FontSize="10"
+                                                                Text="{Binding Name}"
+                                                                VerticalTextAlignment="Center" />
+                                                        </StackLayout>
+                                                    </Grid>
+                                                </Grid>
+                                                <Grid>
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition Width="Auto" />
+                                                        <ColumnDefinition Width="Auto" />
+                                                    </Grid.ColumnDefinitions>
+                                                    <Grid.RowDefinitions>
+                                                        <RowDefinition Height="Auto" />
+                                                    </Grid.RowDefinitions>
+                                                    <Grid Grid.Row="0" Grid.Column="0">
+                                                        <StackLayout Orientation="Horizontal">
+                                                            <Label
+                                                                FontAttributes="Bold"
+                                                                FontSize="15"
+                                                                Text="{Binding Name}"
+                                                                VerticalTextAlignment="Center" />
+                                                            <Label
+                                                                FontSize="10"
+                                                                Text="{Binding Name}"
+                                                                VerticalTextAlignment="Center" />
+                                                        </StackLayout>
+                                                    </Grid>
+                                                </Grid>
+                                                <Grid>
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition Width="Auto" />
+                                                        <ColumnDefinition Width="Auto" />
+                                                    </Grid.ColumnDefinitions>
+                                                    <Grid.RowDefinitions>
+                                                        <RowDefinition Height="Auto" />
+                                                    </Grid.RowDefinitions>
+                                                    <Grid Grid.Row="0" Grid.Column="0">
+                                                        <StackLayout Orientation="Horizontal">
+
+                                                            <Label
+                                                                FontAttributes="Bold"
+                                                                FontSize="15"
+                                                                Text="{Binding Name}"
+                                                                VerticalTextAlignment="Center" />
+                                                            <Label
+                                                                FontSize="10"
+                                                                Text="{Binding Name}"
+                                                                VerticalTextAlignment="Center" />
+                                                        </StackLayout>
+                                                    </Grid>
+                                                </Grid>
+                                            </StackLayout>
+                                        </Frame>
+                                    </ContentView>
+                                </Frame>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
